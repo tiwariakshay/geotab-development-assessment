@@ -17,7 +17,7 @@ Write a document explaining some of the improvements you made to the code, and w
 ### What do I need? ###
 
 * [.NET Core](https://www.microsoft.com/net/core) - any platform
-* Edmunds API key - get one here [http://developer.edmunds.com/](Link URL)
+* Edmunds API key - get one here [http://developer.edmunds.com/]( http://developer.edmunds.com/)
 
 ### Who do I talk to? ###
 
