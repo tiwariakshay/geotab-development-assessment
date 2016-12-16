@@ -22,3 +22,7 @@ Write a document explaining some of the improvements you made to the code, and w
 ### Who do I talk to? ###
 
 If you have any questions you can email hr@fleetcarma.com 
+
+### Build status ###
+[![Build status](https://ci.appveyor.com/api/projects/status/lsvryi8ea0n6b4xo?svg=true)](https://ci.appveyor.com/project/fleetcarma/cs-challenge)
+
