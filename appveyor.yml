@@ -4,4 +4,3 @@ build_script:
     dotnet restore
 
     dotnet build
-    
