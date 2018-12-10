@@ -109,13 +109,13 @@ namespace ConsoleApp1
 
         private static void GetRandomJokes(string category, int number)
         {
-            new JsonFeed("http://api.icndb.com", number);
+            new JsonFeed("https://api.chucknorris.io", number);
             results = JsonFeed.GetRandomJokes(names?.Item1, names?.Item2, category);
         }
 
         private static void getCategories()
         {
-            new JsonFeed("http://api.icndb.com", 0);
+            new JsonFeed("https://api.chucknorris.io", 0);
             results = JsonFeed.GetCategories();
         }
 
