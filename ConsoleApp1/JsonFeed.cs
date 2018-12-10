@@ -11,7 +11,6 @@ namespace ConsoleApp1
     class JsonFeed
     {
         static string _url = "";
-        static int _results = 42;
 
         public JsonFeed() { }
         public JsonFeed(string endpoint, int results)
@@ -23,36 +22,28 @@ namespace ConsoleApp1
 		{
 			HttpClient client = new HttpClient();
 			client.BaseAddress = new Uri(_url);
-			string url = "jokes/";
-			url += _results.ToString();
-			if (firstname != null)
-			{
-				if (url.Contains('?'))
-					url += "&";
-				else url += "?";
-				url += "firstName=";
-				url += firstname.ToString();
-			}
-			if (lastname != null)
-			{
-				if (url.Contains('?'))
-					url += "&";
-				else url += "?";
-				url += "lastName=";
-				url += lastname.ToString();
-			}
+			string url = "jokes/random";
 			if (category != null)
 			{
 				if (url.Contains('?'))
 					url += "&";
 				else url += "?";
-				url += "limitTo=[";
+				url += "category=";
 				url += category;
-				url += "]";
 			}
 
-			return new string[] { Task.FromResult(client.GetStringAsync(url).Result).Result };
-		}
+            string joke = Task.FromResult(client.GetStringAsync(url).Result).Result;
+
+            if (firstname != null && lastname != null)
+            {
+                int index = joke.IndexOf("Chuck Norris");
+                string firstPart = joke.Substring(0, index);
+                string secondPart = joke.Substring(0 + index + "Chuck Norris".Length, joke.Length - (index + "Chuck Norris".Length));
+                joke = firstPart + " " + firstname + " " + lastname + secondPart;
+            }
+
+            return new string[] { JsonConvert.DeserializeObject<dynamic>(joke).value };
+        }
 
         /// <summary>
         /// returns an object that contains name and surname
