@@ -1,6 +1,6 @@
 # README #
 
-As part of your application to FleetCarma, we ask that you complete the following challenge. 
+As part of your application to Geotab Inc., we ask that you complete the following challenge. 
 
 ### Task 1 - Fix some ugly code ###
 
