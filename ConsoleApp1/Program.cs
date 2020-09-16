@@ -121,7 +121,7 @@ namespace ConsoleApp1
 
         private static void GetNames()
         {
-            new JsonFeed("http://uinames.com/api/", 0);
+            new JsonFeed("https://www.names.privserv.com/api/", 0);
             dynamic result = JsonFeed.Getnames();
             names = Tuple.Create(result.name.ToString(), result.surname.ToString());
         }
