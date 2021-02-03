@@ -16,7 +16,7 @@ Write a document explaining some of the improvements you made to the code, and w
 
 ### What do I need? ###
 
-* [Java](https://www.java.com) - Java 8 or higher
+* [Java](https://www.java.com) 
 
 ### Who do I talk to? ###
 
