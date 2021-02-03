@@ -3,9 +3,9 @@
 As part of your application to Geotab Inc., we ask that you complete the following challenge. 
 
 To submit the your challenge please follow the steps below:
--Fork this Github Project to your own repo.
--Choose one of the two available languages(Java or CSharp).
--Create a Branch containing your changes and create a Pull Request.
+- Fork this Github Project to your own repo.
+- Choose one of the two available languages(Java or CSharp).
+- Create a Branch containing your changes and create a Pull Request.
 
 Please submit your completed challenge via a github link to your Pull Request to your own repo.
 
